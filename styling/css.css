@@ -3,5 +3,11 @@
     height: 5vw;
     width: 5vw;
     position: absolute;
-    left: 100px;
+}
+
+.catch-me {
+    background-color: #EC2004;
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
 }
