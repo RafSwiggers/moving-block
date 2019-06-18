@@ -16,7 +16,5 @@
 }
 
 body {
-    background-image: url("moving-block/images/background.png");
-    background-repeat: no-repeat;
-    background-position: left center;
+    background-image: url("/moving-block/images/background.jpg");
 }
