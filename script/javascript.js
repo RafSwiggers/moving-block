@@ -1,8 +1,9 @@
 const userBlock = document.getElementById('block');
 counter = 0;
-food = document.getElementById('food');
+newfood = document.getElementById('food');
 randompositionx = Math.floor(Math.random() * 25) * 2;
 randompositiony = Math.floor(Math.random() * 25) * 2;
+scoreboard = document.getElementById("scoreboard")
 var posx = 0;
 var posy = 0;
 food.style.left = randompositionx + "vw";
@@ -21,15 +22,12 @@ document.addEventListener('keydown', function(e) {
         posy -= 2;
         userBlock.style.top = posy + "vw";
     }
-    if ((food.style.left === userBlock.style.left) && (food.style.top === userBlock.style.top)) {
+    if ((newfood.style.left === userBlock.style.left) && (newfood.style.top === userBlock.style.top)) {
         counter++;
-        food.parentNode.removeChild(food);
-        var newfood = document.createElement('div');
-        newfood.classList.add('catch-me');
-        newfood.id = 'food';
-        document.body.appendChild(newfood);
-
+        scoreboard.innerText = "You've eaten " + counter + " blocks!"
         newfood.style.left = Math.floor(Math.random() * 25) * 2 + 'vw';
         newfood.style.top = Math.floor(Math.random() * 25) * 2 + 'vw';
     };
 });
+
+console.log(parseInt(newfood.style.left));
