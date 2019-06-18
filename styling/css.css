@@ -3,6 +3,7 @@
     height: 5vw;
     width: 5vw;
     position: absolute;
+    background: url("moving-block/images/monkey.jpg")
 }
 
 .catch-me {
@@ -10,4 +11,5 @@
     height: 5vw;
     width: 5vw;
     position: absolute;
+    background: url("moving-block/images/Banana.png")
 }
