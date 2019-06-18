@@ -1,5 +1,4 @@
-var mysong = document.getElementById('song');
-mysong.play();
+var mysong = document.getElementById('song').play();
 const userBlock = document.getElementById('block');
 counter = 0;
 newfood = document.getElementById('food');
