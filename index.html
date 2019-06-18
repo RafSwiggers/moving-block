@@ -26,6 +26,9 @@
     </div>
     <audio src="/moving-block/audio/song.mp3" id="song"></audio>
 </body>
-<script src="/moving-block/script/javascript.js"></script>
+<script src="/moving-block/script/javascript.js">
+    var song = document.getElementById('song');
+    document.addEventListener('load', song.play());
+</script>
 
 </html>
