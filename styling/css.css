@@ -1,0 +1,7 @@
+.moving-block {
+    background-color: #162CA2;
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
+    left: 100px;
+}
