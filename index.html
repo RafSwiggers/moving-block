@@ -28,7 +28,9 @@
 </body>
 <script src="/moving-block/script/javascript.js">
     var song = document.getElementById('song');
-    document.addEventListener('load', song.play());
+    document.addEventListener('load', function() {
+        song.play();
+    });
 </script>
 
 </html>
