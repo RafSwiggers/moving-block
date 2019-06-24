@@ -1,15 +1,13 @@
 .moving-block {
-    height: 5vw;
-    width: 5vw;
+    height: 50px;
+    width: 50px;
     position: absolute;
-    background-color: dodgerblue;
 }
 
 .catch-me {
-    height: 5vw;
-    width: 5vw;
+    height: 50px;
+    width: 50px;
     position: absolute;
-    background-color: brown;
 }
 
 .images {
@@ -18,7 +16,7 @@
 }
 
 body {
-    /* background: url("/images/background.jpg") no-repeat center center fixed;*/
+    background: url("/moving-block/images/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

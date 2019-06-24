@@ -25,11 +25,15 @@ document.addEventListener('keydown', function(e) {
         userBlock.style.top = posy + "vw";
 
     }
-    if (userBlock.left < newfood.left + newfood.width && userBlock.left + userBlock.width > newfood.left &&
-        userBlock.top < newfood.top + newfood.height && userBlock.top + userBlock.height > newfood.top) {;
-        counter++;
-        scoreboard.innerText = "You've eaten " + counter + " blocks!"
-        newfood.style.left = Math.floor(Math.random() * 25) * 2 + 'vw';
-        newfood.style.top = Math.floor(Math.random() * 25) * 2 + 'vw';
+    if (parseInt(userBlock.style.left) === parseInt(newfood.style.left) && parseInt(userBlock.style.top) === (parseInt(newfood.style.top))) {
+        randomfood();
     };
 });
+
+function randomfood() {
+    console.log(userBlock.offsetWidth);
+    counter++;
+    scoreboard.innerText = "You've eaten " + counter + " blocks!"
+    newfood.style.left = Math.floor(Math.random() * 25) * 2 + 'vw';
+    newfood.style.top = Math.floor(Math.random() * 25) * 2 + 'vw';
+}
