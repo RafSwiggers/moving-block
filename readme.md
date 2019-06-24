@@ -6,4 +6,4 @@ Move a block along the website, steered by the keypresses of our intrepid user. 
 ## Why?
 Learning to manipulate a DOM element using Keypresses, as well as letting them react to each other.
 
-[Check out the results here!](#)
+[Check out the results here!](https://rafswiggers.github.io/moving-block/)
